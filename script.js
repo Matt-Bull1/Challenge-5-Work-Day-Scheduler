@@ -24,7 +24,7 @@ $(document).ready(function () {
   $("#14  .description").val(localStorage.getItem("14"));
   $("#15  .description").val(localStorage.getItem("15"));
   $("#16  .description").val(localStorage.getItem("16"));
-  $("#17  .description").val(localStorage.getItem("117"));
+  $("#17  .description").val(localStorage.getItem("17"));
 
   //function to check time and change color of rows
   function checkTime (){
