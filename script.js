@@ -16,15 +16,15 @@ $(document).ready(function () {
     localStorage.setItem(time, text);
   })
   //check local storage for any saved plans at each hour interval
-  $("#hour-9 .description").val(localStorage.getItem("7"));
-  $("#hour-10  .description").val(localStorage.getItem("8"));
-  $("#hour-11  .description").val(localStorage.getItem("9"));
-  $("#hour-12  .description").val(localStorage.getItem("10"));
-  $("#hour-13  .description").val(localStorage.getItem("11"));
-  $("#hour-14  .description").val(localStorage.getItem("12"));
-  $("#hour-15  .description").val(localStorage.getItem("13"));
-  $("#hour-16  .description").val(localStorage.getItem("14"));
-  $("#hour-17  .description").val(localStorage.getItem("15"));
+  $("9 .description").val(localStorage.getItem("7"));
+  $("10  .description").val(localStorage.getItem("8"));
+  $("11  .description").val(localStorage.getItem("9"));
+  $("#12  .description").val(localStorage.getItem("10"));
+  $("#13  .description").val(localStorage.getItem("11"));
+  $("#14  .description").val(localStorage.getItem("12"));
+  $("#15  .description").val(localStorage.getItem("13"));
+  $("#16  .description").val(localStorage.getItem("14"));
+  $("#17  .description").val(localStorage.getItem("15"));
 
   //function to check time and change color of rows
   function checkTime (){
