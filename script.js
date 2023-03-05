@@ -16,15 +16,15 @@ $(document).ready(function () {
     localStorage.setItem(time, text);
   })
   //check local storage for any saved plans at each hour interval
-  $("9 .description").val(localStorage.getItem("7"));
-  $("10  .description").val(localStorage.getItem("8"));
-  $("11  .description").val(localStorage.getItem("9"));
-  $("#12  .description").val(localStorage.getItem("10"));
-  $("#13  .description").val(localStorage.getItem("11"));
-  $("#14  .description").val(localStorage.getItem("12"));
-  $("#15  .description").val(localStorage.getItem("13"));
-  $("#16  .description").val(localStorage.getItem("14"));
-  $("#17  .description").val(localStorage.getItem("15"));
+  $("9 .description").val(localStorage.getItem("9"));
+  $("10  .description").val(localStorage.getItem("10"));
+  $("11  .description").val(localStorage.getItem("11"));
+  $("#12  .description").val(localStorage.getItem("12"));
+  $("#13  .description").val(localStorage.getItem("13"));
+  $("#14  .description").val(localStorage.getItem("14"));
+  $("#15  .description").val(localStorage.getItem("15"));
+  $("#16  .description").val(localStorage.getItem("16"));
+  $("#17  .description").val(localStorage.getItem("117"));
 
   //function to check time and change color of rows
   function checkTime (){
