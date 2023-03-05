@@ -15,6 +15,38 @@ $(document).ready(function () {
     //set items in local storage.
     localStorage.setItem(time, text);
   })
+  //check local storage for any saved plans at each hour interval
+  $("#hour-9 .description").val(localStorage.getItem("7"));
+  $("#hour-10  .description").val(localStorage.getItem("8"));
+  $("#hour-11  .description").val(localStorage.getItem("9"));
+  $("#hour-12  .description").val(localStorage.getItem("10"));
+  $("#hour-13  .description").val(localStorage.getItem("11"));
+  $("#hour-14  .description").val(localStorage.getItem("12"));
+  $("#hour-15  .description").val(localStorage.getItem("13"));
+  $("#hour-16  .description").val(localStorage.getItem("14"));
+  $("#hour-17  .description").val(localStorage.getItem("15"));
+
+  //function to check time and change color of rows
+  function checkTime (){
+    var thisHour = moment().hour();
+
+    $('.time-block').each(function(){
+      var checkTime = parseInt($(this).attr("id"));
+      console.log(checkTime)
+      if (checkTime < thisHour){
+          $(this).addClass("past");
+      } else if (checkTime=== thisHour){
+          $(this).addClass("present");
+          $(this).removeClass("past");
+      } else {
+        $(this).addClass("future");
+        $(this).removeClass("past");
+        $(this).removeClass("present");
+      }
+    })
+  }
+
+  checkTime();
 });
 
   // TODO: Add a listener for click events on the save button. This code should
