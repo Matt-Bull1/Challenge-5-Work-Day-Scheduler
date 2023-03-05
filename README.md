@@ -5,7 +5,7 @@ Installation
 N/A
 
 Usage
-![alt text](assets/screenshot.png)
+![alt text](Assets/screenshot.png)
 
 
 https://matt-bull1.github.io/Challenge-5-Work-Day-Scheduler/
